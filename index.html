@@ -8,11 +8,13 @@ body_id: home
       <h1>din<span class="red hand j">j</span>as</h1>
     </article>
   </p>
+  <p></p>
   <p>
     <article>
-    {% highlight ruby linenos %}
+    <!-- {% highlight ruby linenos=table %} -->
+    {% highlight ruby %}
 def show
-  puts "This is a work in progress"
+  puts "This is a work in progress and also a fairly long line of text so I can test code snippets."
   @widget = Widget(params[:id])
   respond_to do |format|
     format.html # show.html.erb
