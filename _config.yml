@@ -1,8 +1,8 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:title 
-auto: true
-pygments: true
+#auto: true
+highlighter: pygments
 var:
   archive_path: /archive.html
   categories_path : /categories.html
@@ -20,4 +20,4 @@ author :
   github : dinjas
   twitter : dinjas
 
-exclude: .rvmrc
+exclude: [.rvmrc]
