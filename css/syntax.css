@@ -1,3 +1,18 @@
+/*table.highlighttable {
+  overflow-x:auto;
+  display:block;
+}
+
+table.highlighttable td.code {
+  width:100%;
+}
+
+pre code {
+  white-space: pre;
+}*/
+pre { white-space: pre-wrap; text-align: left; }
+.highlighttable { margin: auto; }
+.code { padding-left: 10px; text-align: left; }
 .hll { background-color: #222222 }
 .c { color: #000080 } /* Comment */
 .err { color: #cccccc; border: 1px solid #FF0000 } /* Error */
