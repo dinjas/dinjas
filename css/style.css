@@ -45,7 +45,7 @@ body.dinjas {
 }
 body.dinjas p {
   font-size: 1em;
-  margin: 0.25em auto
+  margin: 1em auto
 }
 body.dinjas h1 {
   font-size: 3em
@@ -53,6 +53,7 @@ body.dinjas h1 {
 body.dinjas .red {
   color: red
 }
-body.dinjas .hand {
+/*body.dinjas .hand {
   cursor: pointer
 }
+*/
