@@ -8,4 +8,14 @@ body_id: home
     <p>Coming soon</p>
     <p><span font-size="0.7em">Powered by Ruby codes</span></p>
   </article>
+  {% highlight ruby linenos %}
+  def show
+    puts "This is a work in progress"
+    @widget = Widget(params[:id])
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @widget }
+    end
+  end
+  {% endhighlight %}
 </main>
