@@ -1,0 +1,23 @@
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:title 
+auto: true
+pygments: true
+var:
+  archive_path: /archive.html
+  categories_path : /categories.html
+  tags_path : /tags.html
+  rss_path: /atom.xml
+
+destination: ./public
+
+production_url : http://dinjas.com
+title : Jason Dinsmore
+
+author :
+  name : Jason Dinsmore
+  email : jason@dinjas.com
+  github : dinjas
+  twitter : dinjas
+
+exclude: .rvmrc
