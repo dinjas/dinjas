@@ -20,4 +20,4 @@ author :
   github : dinjas
   twitter : dinjas
 
-exclude: [.rvmrc]
+exclude: []
