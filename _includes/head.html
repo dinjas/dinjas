@@ -15,8 +15,11 @@
   {% if page.keywords %}
     <meta name="keywords" content="{{page.keywords}}"/>
   {% endif %}
-  <link href="/css/style.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/css/syntax.css" rel="stylesheet" type="text/css">
+  
+  {% assign lvl = page.url | append:'X' | split:'/' | size %}
+  {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+  <link href="{{ relative }}css/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="{{ relative }}css/syntax.css" rel="stylesheet" type="text/css">
 
   <link href="http://feed.dinjas.com/" rel="alternate" title="{{site.title}}" type="application/atom+xml"/>
 <!--  <script type="text/javascript">
