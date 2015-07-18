@@ -8,22 +8,28 @@
   <meta name="Author" content="Jason Dinsmore" />
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
-  <title>{% if page.title %}{{page.title}} - {% endif %}{{site.title}}</title>
   <meta name="description" content="Jason Dinsmore&#39;s website. Jason is a programmer based in the Portland, OR area.">
   {% if page.keywords %}
     <meta name="keywords" content="{{page.keywords}}"/>
   {% endif %}
-  {% if site.safe %}
-    {% include production/analytics.html %}
-  {% endif %}
+  <title>{% if page.title %}{{page.title}} - {% endif %}{{site.title}}</title>
+
   {% include relative.html %}
+
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
+
   <link href="{{ relative }}css/reset.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="{{ relative }}css/style.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="{{ relative }}css/syntax.css" rel="stylesheet" type="text/css">
 
   <link href="http://feed.dinjas.com/" rel="alternate" title="{{site.title}}" type="application/atom+xml"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+  {% if site.safe %}
+    {% include production/analytics.html %}
+  {% endif %}
   <script>
     $(document).on('click', '.j', function() {
       {% if site.safe %}
@@ -31,6 +37,5 @@
       {% endif %}
       alert("HELLO!\n Thanks for being curious!");
     });
-  </script> -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+  </script>
 </head>
