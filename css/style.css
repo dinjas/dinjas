@@ -22,17 +22,17 @@ body.dinjas .red {
   color: red
 }
 ul.links {
-  display: inline;
   margin: 2em;
   padding: 5px;
   width: 80%;
 }
 ul.links, ul.links li {
+  display: inline-block;
   margin: 0;
   padding: 0;
 }
 ul.links li {
-  display: inline-block;
+
 }
 ul.links li a {
   display: inline-block;
