@@ -21,7 +21,31 @@ body.dinjas h1 {
 body.dinjas .red {
   color: red
 }
-/*body.dinjas .hand {
+ul.links {
+  display: inline;
+  margin: 2em;
+  padding: 5px;
+  width: 80%;
+}
+ul.links, ul.links li {
+  margin: 0;
+  padding: 0;
+}
+ul.links li {
+  display: inline-block;
+}
+ul.links li a {
+  display: inline-block;
+  width: 50px;
+  text-decoration: none;
+}
+ul.links li a img {
+  width: 100%;
+}
+ul.links li:hover {
+  opacity: 0.85;
+  background: #eeeeee;
+}
+body.dinjas .hand {
   cursor: pointer
 }
-*/
