@@ -1,8 +1,5 @@
 {% include head.html %}
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} class="dinjas">
 {{ content }}
-{% if site.safe %}
-  {% include production/analytics.html %}
-{% endif %}
 </body>
 </html>
