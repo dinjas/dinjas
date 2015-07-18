@@ -1,5 +1,3 @@
-{% assign lvl = page.url | append:'X' | split:'/' | size %}
-{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 <ul class="links">
   <li>
     <a href="about:blank">
@@ -7,22 +5,22 @@
     </a>
   </li>
   <li>
-    <a href="https://github.com/dinjas">
+    <a href="https://github.com/dinjas" target="_blank">
       <img src="{{ relative }}images/github.png" alt="github" />
     </a>  
   </li>
   <li>
-    <a href="https://www.linkedin.com/pub/jason-dinsmore/12/8b2/175">
+    <a href="https://www.linkedin.com/pub/jason-dinsmore/12/8b2/175" target="_blank">
       <img src="{{ relative }}images/linkedin.png" alt="linkedin" /> 
     </a>
   </li>
   <li>
-    <a href="http://twitter.com/dinjas">
+    <a href="http://twitter.com/dinjas" target="_blank">
       <img src="{{ relative }}images/twitter.png" alt="twitter" />
     </a>
   </li>
   <li>
-    <a href="https://plus.google.com/u/0/118329124842861845543/posts">
+    <a href="https://plus.google.com/u/0/118329124842861845543/posts" target="_blank">
       <img src="{{ relative }}images/gplus.png" alt="google plus" />
     </a>
   </li>
