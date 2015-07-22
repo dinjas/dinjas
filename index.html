@@ -16,7 +16,7 @@ body_id: home
     {% highlight ruby %}
 def show
   puts "This is a work in progress and also a fairly long line of text so I can test code snippets."
-  @widget = Widget(params[:id])
+  @widget = Widget.find(params[:id])
   respond_to do |format|
     format.html # show.html.erb
     format.json { render json: @widget }
