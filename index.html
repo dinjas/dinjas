@@ -14,13 +14,10 @@ body_id: home
   <p>
     <article>
     {% highlight ruby %}
-def show
-  puts "This is a work in progress and also a fairly long line of text so I can test code snippets."
-  @jason = User.find_by(name: 'dinjas')
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @jason }
-  end
+private
+
+def computer_name
+  %w{ jason dinsmore }.map{ |n| n.first(3) }.reverse.join
 end
     {% endhighlight %}
     </article>
