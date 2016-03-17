@@ -3,23 +3,31 @@ layout: default
 body_id: home
 ---
 <main>
-  <p>
-    <article>
-      <h1>din<span class="red hand j">j</span>as</h1>
-    </article>
-  </p>
-  <p>
-    {% include links.html %}  
-  </p>
-  <p>
-    <article>
-    {% highlight ruby %}
-private
 
-def computer_name
-  %w{ jason dinsmore }.map{ |n| n.first(3) }.reverse.join
-end
-    {% endhighlight %}
-    </article>
-  </p>
+  <article>
+    <section class="centered">
+      <h1>din<span class="red hand j">j</span>as</h1>
+    </section>
+    <section class="centered">
+      {% include links.html %}  
+    </section>
+    <section class="main-content">
+      <h3>What is this site?</h3>
+      <p>
+        Who knows? Maybe inspiration will hit and I'll add content to this site someday.
+      </p>
+      <p>
+        In the interim, its purpose is to give me something to put in the website field of web profiles.
+      </p>
+    </section>
+    <section class="main-content">
+      <h3>namer.rb</h3>
+      <script src="https://gist.github.com/dinjas/adde8ed92374311b5dbb.js"></script>
+    </section>
+    <footer>
+      <section class="centered">
+        &#9996;
+      </section>
+    </footer>
+  </article>
 </main>

@@ -8,7 +8,6 @@ body.dinjas {
   max-width: 960px;
   padding: 0;
   position: relative;
-  text-align: center;
   width: 100%
 }
 body.dinjas p {
@@ -18,7 +17,7 @@ body.dinjas p {
 body.dinjas h1 {
   font-size: 3em
 }
-body.dinjas .red {
+.red {
   color: red
 }
 ul.links {
@@ -30,9 +29,6 @@ ul.links, ul.links li {
   display: inline-block;
   margin: 0;
   padding: 0;
-}
-ul.links li {
-
 }
 ul.links li a {
   display: inline-block;
@@ -46,6 +42,47 @@ ul.links li:hover {
   opacity: 0.85;
   background: #eeeeee;
 }
-body.dinjas .hand {
+.hand {
   cursor: pointer
+}
+.centered {
+  text-align: center;
+}
+section {
+  margin: 0.5rem auto;
+}
+section.main-content {
+  margin-top: 10%;
+}
+h2, h3, h4, h5 {
+/*  font-weight: bold; */
+}
+body.dinjas h1 {
+  font-size: 3rem
+}
+
+body.dinjas h2 {
+  font-size: 2rem;
+  margin: 0.5rem auto;
+}
+
+body.dinjas h3 {
+  font-size: 1.75rem
+}
+
+body.dinjas h4 {
+  font-size: 1.5rem
+}
+
+body.dinjas h5 {
+  font-size: 1.25rem
+}
+
+body.dinjas h6 {
+  font-size: 1rem;
+}
+
+footer section {
+  margin: 1rem auto;
+  font-size: 2rem;
 }
