@@ -4,7 +4,7 @@ gems:
   - jekyll-sitemap
 permalink: /:title 
 #auto: true
-highlighter: pygments
+highlighter: rouge
 var:
   archive_path: /archive.html
   categories_path : /categories.html
@@ -13,7 +13,7 @@ var:
 
 destination: ./public
 
-production_url : http://dinjas.com
+production_url : https://dinjas.com
 title : Jason Dinsmore
 
 author :
