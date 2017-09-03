@@ -13,7 +13,7 @@ var:
 
 destination: ./public
 
-production_url : https://dinjas.com
+production_url : http://dinjas.com
 title : Jason Dinsmore
 
 author :
